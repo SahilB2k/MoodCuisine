@@ -1,0 +1,118 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+body {
+  background-color: wheat;
+  background-image: url(quizbg.jpg);
+  font-family: 'Salsa', cursive;
+}
+
+.centre {
+  
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#box {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  padding: 15px;
+  box-shadow: 0px 0px 5px grey;
+  margin: 10px;
+  background-color: rgb(159, 238, 247);
+}
+
+#box h2{
+  text-align: center;
+}
+
+#quesBox{
+  font-size: 40pxpx;
+}
+.count{
+  border: 2px solid red;
+  
+}
+
+.row {
+  width: 100%;
+  margin: 1rem 0; }
+
+.btn {
+  width: 100%; /* Make the button full width on smaller screens */
+  margin: 10px 0; /* Adjusted margin for better spacing */
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  border: none;
+  color: white;
+  border: 0.5px solid white;
+  border-radius: 5px;
+  background-color: #1e94af;
+
+  cursor: pointer;
+}
+.btn:hover{
+border: 2px dashed white;
+color: black;
+
+}
+
+.style {
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+.h3 {
+  font-size: 30px;
+}
+
+p {
+  background: #Fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  background-color: black;
+  color: white;
+  border: 2px dash red;
+  /* margin-top: 50px; */
+  margin-left: 0; /* Adjusted margin for better centering */
+  height: 100px;
+  width: 600px; /* Make the paragraph full width */
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
+
+  #box {
+    max-width: 100%; /* Make the box full width on smaller screens */
+  }
+
+  .btn {
+    width: 100%; /* Make the button full width on smaller screens */
+  }
+
+  p {
+    margin-left: 0; /* Center the paragraph on smaller screens */
+  }
+}

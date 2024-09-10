@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image {
+            /* border: 2px solid blue; */
+            height: auto;
+            width: auto;
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            height: 700px;
+            width: 1900px;
+            /* filter: blur(2px); */
+        }
+
+        hr {
+            height: 5px;
+            /* background-color: brown; */
+            margin-top: 30px;
+            border-radius: 30px;
+        }
+
+        .script {
+            margin-left: 50px;
+            margin: 20px;
+            margin: 9px;
+            font-size: 64px;
+            color: white;
+            padding-left: 100px;
+        }
+        a{
+            text-decoration: none;
+            color: wheat;
+        }
+
+        h1 {
+            margin-left: 20px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            margin-left: 950px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .nav-bar {
+            background-color: navy;
+            width: auto;
+            height: 100px;
+            margin-left: 20px;
+            margin-right: 20px;
+            display: flex;
+            justify-content: space-between;
+            display: flex;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+
+        .rightSection ul {
+            display: flex;
+            margin: 26px;
+            font-size: 33px;
+            text-decoration: none;
+            color: wheat;
+        }
+
+        .rightSection ul li {
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 83px;
+            color: wheat;
+            text-decoration: none;
+        }
+        .rightSection li:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav>
+
+            <div class="nav-bar">
+                <div class="leftSection">
+                    <h1 class="script"> <span id="element"></span></h1>
+                </div>
+                <div class="rightSection">
+                    <ul>
+
+                        <li> <a href="/home">Home</a></li>
+                        <li> <a href="/sign-up">Signup</a></li>
+                        <li>About</li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image">
+            <img src="/static/bgimage1.png" alt="">
+        </div>
+        <hr>
+        <h1>ABOUT US</h1>
+        <hr>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['𖣠 Mood Cuisine 𖣠 '],  //&#9825; -heart
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

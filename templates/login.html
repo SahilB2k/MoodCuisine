@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flexbox;
+        }
+
+            a{
+                color: wheat;
+                text-decoration: none;
+            }
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+            /* background-color: 	rgb(210, 4, 45,.55);  */
+            background-color: #162053;
+            /* background-color:#d2b318; */
+            /* border: 2px solid red; */
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            /* width: 500px; */
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: 3px 5px rgb(71, 66, 66);
+        }
+
+        .rightSection {
+            width: 20%;
+            height: 40px;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .leftSection {
+            position: relative;
+            right: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: white;
+        }
+
+        .leftSection h1 {
+            font-size: 50px;
+        }
+
+        .sections {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .rightSection ul {
+            display: flex;
+            list-style: none;
+            margin-top:-3px ;
+        }
+
+        .rightSection ul li {
+
+            display: flex;
+            list-style: none;
+            margin: 0px 30px;
+            font-size: 30px;
+            cursor: pointer;
+            padding: 5px;
+            color: wheat;
+            /* justify-content: ; */
+        }
+
+        .rightSection ul li:hover {
+            /* background-color: rgb(255, 255, 255); */
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            transition: 0.5s;
+            font-size: 32px;
+            position: relative;
+            color: white;
+            font-weight: bold;
+            border: 2px dashed black;
+        }
+
+        .logo {
+            width: 400px;
+            margin-right: 1100px;
+            margin-left: 20px;
+            height: 95px;
+            align-items: center;
+            display: flex;
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 885px;
+            margin-top: 10px;
+            background-color: bisque;
+            background-image: url("https://media.istockphoto.com/id/469839680/vector/vintage-kitchen-tools-pattern.jpg?s=612x612&w=0&k=20&c=fBsq3rbVLT89w6Vr8AI79D9n_hBOFjb-DjLscuSZAlU=");
+            /* ("https://media.istockphoto.com/id/469839680/vector/vintage-kitchen-tools-pattern.jpg?s=612x612&w=0&k=20&c=fBsq3rbVLT89w6Vr8AI79D9n_hBOFjb-DjLscuSZAlU=" */
+            margin-left: 20px;
+    margin-right: 20px;
+        }
+
+        .container1 {
+            height: 600px;
+            width: 1287px;
+            border: solid lightblue;
+            border-radius: 50px;
+            background-color: aqua;
+            display: flex;
+            box-shadow: 8px 8px 8px 8px black;
+
+        }
+
+        .container2 {
+            background-color: pink;
+            height: 600px;
+            width: 500px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            margin-left: 00px;
+            background-image: url(" https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148695092.jpg ");
+        }
+
+        /* https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148695092.jpg */
+
+        .line1 {
+            color: white;
+            font-size: 20px;
+            margin-top: 200px;
+            margin-left: 30px;
+            font-weight: bold;
+            opacity: 0.9;
+        }
+
+        .line2 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: white;
+            margin-top: 5px;
+            font-size: 78px;
+            letter-spacing: 5px;
+            margin-left: 30px;
+            font-weight: bold;
+
+        }
+
+        .line3 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: white;
+            font-size: 78px;
+            letter-spacing: 5px;
+            margin-left: 30px;
+            font-weight: bold;
+        }
+
+        .line4 {
+            margin-top: 5px;
+            color: white;
+            font-size: 20px;
+            margin-left: 30px;
+            font-weight: bold;
+        }
+
+        .container3 {
+            height: 600px;
+            width: 800px;
+            background-color: burlywood;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+
+        }
+
+        .home:hover,
+        .about:hover,
+        .login:hover,
+        .signin:hover {
+            background-color: rgba(255, 255, 255, 0.328);
+            border-radius: 30px;
+            /* opacity: 0.1; */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.5s;
+
+
+        }
+
+        .home,
+        .about,
+        .login,
+        .signin {
+            width: 120px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .username {
+            color: black;
+            font-size: 30px;
+            display: flex;
+            /* margin-top: 250px; */
+            margin-left: 60px;
+            font-weight: bold;
+        }
+
+        .password {
+            color: black;
+            font-size: 30px;
+            display: flex;
+            margin-top: 25px;
+            margin-left: 60px;
+            font-weight: bold;
+        }
+
+        .username1 {
+            margin-left: 20px;
+
+        }
+
+        button {
+            margin-left: 400px;
+            margin-top: 20px;
+            font-size: 30px;
+            word-spacing: 5px;
+            padding: 6px;
+            border-radius: 8px;
+            width: 172px;
+        }
+
+        input {
+            font-size: 20px;
+            /* border-radius: 20px; */
+            box-shadow: 2px 2px 2px black;
+            padding-right: 50px;
+            margin-left: 7px;
+            word-spacing: 10px;
+        }
+
+        .forgot {
+            display: flex;
+            margin-top: -23px;
+            margin-left: 79px;
+
+        }
+
+        .forgot-username {
+            color: black;
+            font-size: 20px;
+            display: flex;
+            margin-top: 50px;
+            margin-left: 170px;
+        }
+
+        .forgot-password {
+            color: black;
+            font-size: 20px;
+            display: flex;
+            margin-top: 50px;
+            margin-left: 150px;
+        }
+
+        .new-user {
+            font-size: 20px;
+            margin-top: 27px;
+            margin-left: 417px;
+            display: flex;
+        }
+
+        .logo1 {
+            display: flex;
+            margin-top: 200px;
+            margin-left: 260px;
+            font-weight: bold;
+            /* margin-bottom: ; */
+            font-size: 60px;
+        }
+
+        .login4 {
+            font-size: 30px;
+            margin-left: 3500px;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+   {% include "header.html" %}
+    <main>
+        <div class="container">
+
+
+
+            <div class="container1">
+
+
+
+
+
+                <div class="container3">
+
+
+                    <li class="logo1">Mood Cuisine</li>
+                    <li class="login4">LOGIN</li>
+
+                    <form  "{% url 'login' %}" method="post">
+                        {% csrf_token %}
+                        <div class="username">USERNAME: <input type="text" size="40"  class="username" id="username" name="username" placeholder="@XYZ123"></div>
+                        <div class="password">PASSWORD:<input type="password"  id="pass1" class="pass1" name="pass1" height="40px" size="40"></div>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                    <div class="forgot">
+                        <p class="forgot-username"><a href="http://">Forgot Username..</a></p>
+                        <p class="forgot-password"><a href="http://">Forgot Password..</a></p>
+                    </div>
+                    <div class="new-user">New User?<a href="http://">Signin</a></div>
+
+
+                </div>
+                <div class="container2">
+                    <div class="welcome">
+                        <p class="line1">WELCOME TO</p>
+                        <p class="line2">MOOD</p>
+                        <p class="line3">CUISINE</p>
+                        <p class="line4">A CULINARY JOURNEY THROUGH EMOTIONS</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

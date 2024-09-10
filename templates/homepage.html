@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="/static/index.css">
+     <link rel="stylesheet" href="/static/middlesec.css">
+<style>
+    button{
+        background-color: #0f0f4a;
+        border: none;
+        width: 80px;
+    }
+    button:hover{
+        background-color: lightblue;
+        color:black;
+    }
+    a{
+        color: burlywood;
+        text-decoration: none;
+    }
+    a:hover{
+        
+        color: white;
+    }
+     h1 .quizgo{
+        color:rgb(148, 96, 1);
+    }
+    .quizgo:hover{
+        color: white;
+    }
+    .sen1{
+        word-spacing: px;
+        margin-top: 30px;
+        {% comment %} margin-top: 100px; {% endcomment %}
+        font-family: "Bungee Spice", sans-serif;;
+    }
+    /* .sen2 ul li{
+        font-family: "Bungee Spice", sans-serif;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-top:25px;
+        font-size: 50px;
+         margin-left: 20px;
+        margin-right: 20px; 
+     word-spacing: 10px;
+    }  */
+    .so{
+        padding:10px;
+        backgroundcolor:black;
+        color:white;
+        border-radius:10px;
+    }
+    h3{
+        color:#136c13;
+        color: #136c13;
+    display: flex;
+    justify-content: center;
+    }
+    h5{
+        display: flex;
+    justify-content: center;
+    font-size: 21px;
+    }
+    .nav-bar{
+        justify-content:space-evenly;
+    }
+    .container{
+        max-width:1223px;
+    }
+    .leftSection {
+        margin-left: -157px;
+    }
+    .rightSection {
+        margin-left: -52px;
+    }
+
+</style>
+</head>
+
+<body>
+    
+    <header>
+        <nav>  
+    
+        <div class="nav-bar">
+                <div class="leftSection">
+                    <h1> <span id="element"></span></h1>
+                </div>
+                <div class="rightSection">
+                    <ul>
+                        
+                        <li>
+                        {% if user.is_authenticated %}
+                            <form action="{% url 'aboutus' %}" method="post">
+                            {% csrf_token %}
+                            <button class="so" type="submit">Signout</button>
+                            </form>
+                        {% else %}
+                            
+                        {% endif %}
+                    </li>
+                            <li>Home <a href="/"></a></li>
+                        <li> <a href="/sign-up">Signup</a></li>
+                        <li><a href="/aboutus">Aboutus</a></li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="sections">
+            <div class="text">
+                 {% if user.is_authenticated %}
+                    <h3>
+                    Hello {{fname}}
+                    </h3>
+                    <h5>You have succesfully logged in!</h5>
+                {%else%}
+                    <h5>Please Sign-in!</h5>
+                {%endif%} 
+               
+                <div class="sen1">"Eat well, feel well. Food has the power to nourish not just the body but the spirit, turning a meal into a mood booster."</div>
+            
+            </div>
+            <div class="container">
+                <div class="wrapper">
+                    <img src="/static/INDIAN1.jpg">
+                    <img src="/static/MEXICAN.jpg">
+                    <img src="/static/CHINESE.jpg">
+                    <img src="/static/KOREAN.jpg">
+                    <img src="/static/INDIAN DISHES (1) (1).png~">
+                    <img src="/static/f11.webp">
+                    <img src="/static/f11.webp">
+                    <img src="/static/f11.webp">
+                </div>
+            </div>
+        </div>
+    </main>
+<div class="middleSection">
+    <div class="Box">
+        <div class="game-btn"><button><a href="/mood-page"><img src="/static/moods.jpg" alt=""></a></button></div>
+        <div class="sub"><h1><a class="quizgo" href="/mood-page">Click here to enter Mood Interface</a></h1></div>
+    </div>
+    <div class="sep"></div>   
+    <div class="Box">
+        <div class="game-btn"><button><a href="/start-quiz"><img src="/static/quiz12.jpg" alt=""></a></button></div>
+        <div class="sub"><h1 ><a class="quizgo" href="/start-quiz">Click here to play Quiz</a></h1></div>
+    </div> 
+    <div class="sep"></div>  
+    <div class="Box">
+        <div class="game-btn"><button><img src="/static/growth.avif" alt=""></button></div>
+        <div class="sub"><h1><a class="quizgo" href="">Click to see your Rank</a></h1></div>
+    </div>   
+</div>
+<footer>
+        <div class="part">
+            <div class="leftPart">
+                MOOD CUISINE &#169;All Copyright Reserved
+            </div>
+            <div class="rightPart">
+                <ul>
+                    <h3>Follow us on~</h3>
+                    <li><img src="/static/insta.png" alt=""></li>
+                    <li><img src="/static/facebook (2).png" alt="" srcset=""></li>
+                    <li><img src="/static/yt.png" alt="" srcset=""></li>
+                    <!-- <li>youtube</li> -->
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['𖣠 Mood Cuisine 𖣠 '],  //&#9825; -heart
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="/static/index.js"></script>
+</body>
+
+
+</html>

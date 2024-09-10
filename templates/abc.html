@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>\
+    <style>
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+margin-top: 50px;
+}
+.num1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.num2{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn{
+    margin-left: 170px;
+    margin-top: 40px;
+    
+}
+button{
+    padding: 20px;
+    width: 110px;
+    background-color: lightblue;
+}
+.Output{
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="heading"><h1>USER-FORM</h1>
+<div class="forms">
+    <form  action="{% url 'submitform' %}">
+        {% csrf_token %}
+        {{form}}
+        {% comment %} <div class="num1">
+        <label class="label1" for="">VALUE-1:</label>
+        <input type="text" class="num1" name="num1" value="{{n1}}" width="200px">
+        </div>
+        <div class="num2">
+            <label class="label2" for="">VALUE-2:</label>
+        <input type="text" class="num2" name="num2" value="{{n2}}"  width="200px">
+        </div> {% endcomment %}
+        <div class="btn">
+            <button type="submit">SUBMIT</button>
+        </div>
+        <div class="Output">
+            <label for="">RESULT:</label>
+            <input type="text" value="{{output}}"/>
+
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>

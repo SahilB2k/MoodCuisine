@@ -1,0 +1,79 @@
+.container {
+    background-image: url(bg1.jpg);
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container1 {
+    border-top-left-radius: 20px;
+    /* border: 5px solid lightsalmon; */
+    border-left: 5px solid lightsalmon;
+    border-top: 5px solid lightsalmon;
+    border-bottom: 5px solid lightsalmon;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    margin-bottom: 250px;
+    height: auto;
+    background-image: url(bg4.jpg);
+    margin-top: 250px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    display: flex;;
+}
+
+label{
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(206, 18, 18);
+
+}
+input{
+    border-radius: 5px;
+    height: 25px;
+    width: 300px;
+    font-size: 20px;
+    padding-left: 5px;;
+    margin-top: 24px;
+
+}
+button{
+    width: 120px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(104, 215, 210);
+    margin-left: 170px;
+}
+.heading{
+    color: rgb(57, 2, 2);
+    font-weight: bold;
+    font-size: 40px;
+    font-family: serif;
+    margin-left: 230px;
+}
+.container2{
+    margin-top: 0px;
+    width: 400px;
+    height: 510px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right: 5px solid lightsalmon;
+    border-top: 5px solid lightsalmon;
+    border-bottom: 5px solid lightsalmon;
+    background-image: url(comp5.png);
+}

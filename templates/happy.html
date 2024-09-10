@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/static/happy.css">
+    <style>
+        .box2{
+            background-color: #f9cdd4;
+    height: 750px;
+    width: auto;
+    margin: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+
+        }
+        .box {
+            margin-left: 30px;
+            height: 750px;
+            overflow-x: hidden;
+            margin-right: 30px;
+        }
+        p{
+            margin-left:-5px ;
+            margin-bottom: 3px;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(101, 40, 67);
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 400px;
+        }
+
+        .swiper-slide {
+            width: 500px;
+            padding: 0 10px;
+        }
+
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            content: 'next';
+            margin-right: 65px;
+            font-weight: bold;
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            bottom: var(--swiper-pagination-bottom, 8px);
+            top: var(--swiper-pagination-top, auto);
+            left: 0;
+            width: 100%;
+            margin-bottom: 150px;
+        }
+        .card:hover{
+box-shadow: 8px 8px 8px grey;
+        }
+
+       
+
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            content: 'prev';
+            margin-left: 66px;
+            font-weight: bold;
+        }
+        
+
+        .card {
+            border-radius: 8px;
+            height: auto;
+            border: 10px solid #ebf3d8;
+            overflow: hidden;
+            margin: 10px;
+            width: 402px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .description {
+            /* padding: 15px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            height: 165px;
+            flex-direction: column;
+            margin-top: -3px;
+            background-color: wheat;
+    width: 373px;
+        }
+        .arrow{
+            width: 50px;
+            height: 110px;
+            display: flex;
+            justify-content: end;
+        }
+        .arrow1{
+            width: 100px;
+    height: 122px;
+    display: flex;
+    justify-content: start;
+    /* margin-right: -84px; */
+    margin-left: 13px;
+        }
+        div.name {
+            margin-bottom: 20px;
+    height: 26px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.name1{
+    margin-bottom: 20px;
+    height: 26px;
+    margin-left: 5px;
+    font-weight: bold;  
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="leftSection">
+                    <h1> <span id="element"></span></h1>
+                </div>
+                <div class="rightSection">
+                    <ul>
+                        <li> <a href="/home">Home</a></li>
+                        <li> <a href="/sign-up">Signup</a></li>
+                        <li>About</li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="box">
+            <div class="dessert">
+                <h1 class="h1">MAIN COURSES:</h1>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/static/main.png" alt="">
+                            <div class="description">
+                                <div class="name"><p class="M1">● DAL MAKHANI ●</p></div>
+                                <p>Indulge in the richness of Dal Makhani, a classic North Indian dish featuring black lentils and kidney beans simmered in a luscious tomato-based gravy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/static/main1.png" alt="">
+                            <div class="description">
+                                <div class="name"><p class="M2">● PANEER FRY ●</p></div>
+
+                                <p> Delight in the savory goodness of this classic Indian dish. Tender cubes of paneer, infused with a blend of aromatic spices, are gently pan-fried to golden perfection. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/static/main2.png" alt="">
+                            <div class="description">
+                                <div class="name"><p class="M1">● CHICKEN TIKKA MASALA ●</p></div>
+
+                                <p>Tender pieces of grilled chicken are smothered in a creamy tomato-based sauce infused with aromatic spices. With each bite, savor the perfect balance of heat and creaminess.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/static/main3.png" alt="">
+                            <div class="description">
+                                <div class="name"><p class="M1">● PASTA PRIMAVERA ●</p></div>
+
+                                <p> Experience the vibrant flavors of this classic Italian dish.Colorful vegetables, such as bell peppers, cherry tomatoes, and broccoli, are sautéed to perfection and tossed with al dente pasta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/static/main4.png" alt="">
+                            <div class="description">
+                                <div class="name"><p class="M1">● CAPRESE CHICKEN ●</p></div>
+
+                                <p> Revel in the harmony of flavors in this mouthwatering dish. Tender chicken pieces are adorned with ripe tomatoes, fresh mozzarella, and basil leaves, creating a vibrant and delicious combination.p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/static/main5.png" alt="">
+                            <div class="description">
+                                <div class="name"><p class="M1">● EGGPLANT PARMESAN ●</p></div>
+
+                                <p>Dive into an Italian classic. Tender eggplant slices, coated in crispy breadcrumbs, are baked to perfection with marinara sauce and topped with gooey melted cheese. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/static/main6.png" alt="">
+                            <div class="description">
+                                <div class="name"><p class="M1">● ZUCCHINI NOODLES ●</p></div>
+
+                                <p> Fresh zucchini is spiralized into noodles and sautéed until tender, then tossed seasoning for a low-carb and gluten-free alternative. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more swiper-slide elements for additional cards -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+<!-- ------------------------------------------------------------------------------------------slider2-------------------------------- -->
+
+<div class="box2" >
+    <div class="dessert">
+        <h1 class="h1">DESSERTS:</h1>
+    </div>
+    <div class="swiper-container2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="/static/dessert1.png" alt="">
+                    <div class="description">
+                        <div class="name1"><p class="M1">● SHRIKHAND ●</p></div>
+                        <p>Indulge in the creamy sweetness of Shrikhand, a dessert made with strained yogurt. This delightful treat features smooth, thick yogurt that's been hung to remove excess whey, resulting in a rich and concentrated base.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="/static/desert2.png" alt="">
+                    <div class="description">
+                        <div class="name1"><p class="M1">● KULFI ●</p></div>
+                        <p> Indulge in the rich and creamy flavors of this traditional Indian dessert. Made from thickened milk and variety of aromatic spices such as cardamom and saffron, Kulfi offers a luxurious and satisfying treat. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="/static/dessert3.png" alt="">
+                    <div class="description">
+                        <div class="name"><p class="M1">● MINT SMOOTHIE ●</p></div>
+                        <p> Refresh your senses with this invigorating blend. Fresh mint leaves are combined with creamy yogurt, tangy lime juice, and a touch of honey for a cool and revitalizing drink.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="/static/dessert4.png" alt="">
+                    <div class="description">
+                        <div class="name"><p class="M1">● STRAWBERRY  PARFAIT  ●</p></div>
+                        <p>Dive into layers of fruity goodness with this delightful treat. Fresh strawberries are layered with creamy yogurt and crunchy granola,creating  perfect balance of sweetness and texture.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="/static/dessert5.png" alt="">
+                    <div class="description">
+                        <div class="name"><p class="M1">● CHOCOLATE AVACADO ●</p></div>
+                        <p> Delight in a guilt-free dessert experience with this creamy delight. Smooth avocado blends seamlessly with rich cocoa powder, offering a decadent mousse that satisfies your sweet tooth without the guilt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="/static/desert6.png" alt="">
+                    <div class="description">
+                        <div class="name"><p class="M1">● CHEESE CAKE ●</p></div>
+                        <p>Enjoy a classic dessert favorite. A smooth and creamy filling rests atop a buttery graham cracker crust, creating a decadent treat that melts in your mouth with every bite. Topped with a luscious fruit compote or a drizzle of caramel sauce, it's the perfect dessert for any occasion.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="/static/dessert7.png" alt="">
+                    <div class="description">
+                        <div class="name"><p class="M1">● LEMON PIE ●</p></div>
+                        <p>Savor the tangy sweetness of this classic dessert. A buttery, flaky crust holds a zesty lemon filling, bursting with citrus flavor. Each bite offers a perfect balance of tartness and sweetness, making it a refreshing and delightful treat for any occasion.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="/static/dessert8.png" alt="">
+                    <div class="description">
+                        <div class="name"><p class="M1">● MACARONS ●</p></div>
+                        <p>Delight in these exquisite French treats. Crisp meringue shells sandwich a creamy ganache or fruity filling, creating a symphony of textures and flavors. With each bite-sized indulgence, experience the perfect balance of sweetness and elegance, making them a delightful addition to any dessert spread.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more swiper-slide elements for additional cards -->
+        </div>
+    </div>
+</div>
+<div class="swiper-pagination2" ></div>
+<div class="swiper-button-prev2" tabindex="-1" ><h1>ᐸ</h1></div>
+<div class="swiper-button-next2" tabindex="-1" ><h1>ᐳ</h1></div>
+<!-- <div class="swiper-pagination2" ></div>
+<div class="swiper-button-next2" tabindex="-1" ><img class="arrow1" src="slide-button2.png" alt=""></div>
+<div class="swiper-button-prev2" tabindex="-1" ><img class="arrow" src="slide-button.png" alt=""></div> -->
+
+        
+        
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['𖣠 Mood Cuisine 𖣠 '],
+            typeSpeed: 50,
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        var swiper2 = new Swiper('.swiper-container2', {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next2',
+                prevEl: '.swiper-button-prev2',
+            },
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="/static/happy.js"></script>
+</body>
+
+</html>

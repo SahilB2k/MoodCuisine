@@ -1,0 +1,58 @@
+.middleSection{
+    background-color: rgb(229, 199, 144);
+    max-width: auto;
+    max-height: 100%;
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 7px;
+    display: flex;
+    border-bottom-left-radius:50px ;
+    border-bottom-right-radius:50px ;
+    /* box-shadow: 2px 2px 2px black; */
+}
+.Box{
+height: 700px;
+width: auto;
+}
+.sub:hover{
+    color: white;
+}
+.Box:hover{
+ scale: 1.01;
+}
+/* border: 2px dashed red; */
+
+.sep{
+    width: 6px;
+    background-color: #f1e9dd;
+    border-radius: 20px;
+}
+.sub{
+    height: 150px;
+    width: auto;
+    margin: 20px 50px 50px 50px;
+    /* border: 2px dashed blue; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: chocolate;
+}
+.game-btn{
+height: 400px;
+width: 560px;
+margin: 90px 50px 0px 50px;
+border: 2px dashed black;
+
+
+}
+button img{
+    width: 560px;
+    height: 400px;  
+}
+button:hover{
+   box-shadow: 5px 5px 5px black ;
+   
+}
